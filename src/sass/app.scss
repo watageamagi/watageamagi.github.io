@@ -1,0 +1,62 @@
+$textColor: #3D3D3D;
+//$textSecondColor: #C1C1C1;
+//$primaryColor: #841041;
+//$secondColor: #C18259;
+//$thirdColor: #410921;
+
+@import "mixin/transition";
+@import "mixin/mixin";
+
+
+body {
+    color: $textColor;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    margin: 0;
+}
+
+// スマホ　非表示
+.sp-none {
+    @include mq(md) {
+        display: none!important;
+    }
+}
+
+// スマホ　表示
+.sp-show {
+    display: none!important;
+    @include mq(md) {
+        display: block!important;
+    }
+}
+
+[v-cloak] {
+    display: none;
+}
+
+
+
+
+#app {
+    background-color: #131316;
+    height: 100vh;
+}
+
+
+.startView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gameView {
+    .text {
+        height: 100vh;
+        color: rgba(var(--vs-primary),1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+    }
+}
