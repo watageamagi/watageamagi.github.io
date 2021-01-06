@@ -1,15 +1,9 @@
-$textColor: #3D3D3D;
-//$textSecondColor: #C1C1C1;
-//$primaryColor: #841041;
-//$secondColor: #C18259;
-//$thirdColor: #410921;
 
 @import "mixin/transition";
 @import "mixin/mixin";
 
 
 body {
-    color: $textColor;
     font-family: "Hiragino Kaku Gothic ProN", sans-serif;
     margin: 0;
 }

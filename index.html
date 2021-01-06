@@ -21,6 +21,7 @@
 <body>
     <div id="app" v-cloak>
 
+        <!--     スタート画面       -->
         <div v-if="!isGameStart" class="startView">
             <vs-button
                 size="xl"
@@ -29,8 +30,8 @@
         </div>
 
 
+        <!--     ジャンケンの画面       -->
         <div class="gameView" v-else>
-            <!--     ジャンケンの画面       -->
             <p class="text">ジャンケン作ってね<br>
                 1qwq1
             </p>
@@ -38,11 +39,10 @@
 
     </div>
 
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.js"></script>
 
-<!-- components -->
+    <!-- components -->
 
     <script src="./src/js/App.js"></script>
 
