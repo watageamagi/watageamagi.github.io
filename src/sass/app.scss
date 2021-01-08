@@ -31,7 +31,6 @@ body {
 
 
 #app {
-    background-color: #131316;
     height: 100vh;
 }
 
@@ -53,4 +52,8 @@ body {
         font-size: 30px;
         text-align: center;
     }
+}
+.hoge{
+  display: flex;
+  flex-wrap: wrap;
 }

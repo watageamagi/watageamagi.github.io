@@ -28,7 +28,6 @@ body {
   display: none; }
 
 #app {
-  background-color: #131316;
   height: 100vh; }
 
 .startView {
@@ -43,5 +42,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  font-size: 30px;
   text-align: center; }
+
+.hoge {
+  display: flex;
+  flex-wrap: wrap; }
