@@ -32,9 +32,25 @@
 
         <!--     ジャンケンの画面       -->
         <div class="gameView" v-else>
-            <p class="text">ジャンケン作ってね<br>
-                watage
-            </p>
+            <vs-button
+                size="xl"
+                @click="tehudachange(JANKEN_GU)"
+            >グー</vs-button>
+
+            <vs-button
+                size="xl"
+                @click="tehudachange(JANKEN_TYOKI)"
+            >チョキ</vs-button>
+
+            <vs-button
+                size="xl"
+                @click="tehudachange(JANKEN_PA)"
+            >パー</vs-button>
+
+            {{ getTehudaName }}
+            {{ getCpuName }}
+            {{ kekka }}
+
         </div>
 
     </div>

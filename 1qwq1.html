@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+
+  <!--  bootstrap  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.css" rel="stylesheet">
+  <!--  css  -->
+  <link rel="stylesheet" type="text/css" href="./src/css/app.css">
+  <link rel="stylesheet" type="text/css" href="./src/plugin/animate.min.css">
+
+  <!--  fontawesome  -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app" v-cloak>
+      <div class="header">
+        <div class="title-logo">主要国家</div>
+        <div class="title-list">
+          <ul>
+            <li>ドイツ</li>
+            <li>ソ連</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="show-room">
+        <h1>第二次世界大戦</h1>
+        <div class="item">
+          <div class="col-12 col-md-4" v-for='item in items'>
+            <div class="img"> <img :src="item.img "></div>
+            <div class="text-box">
+              <h1>ドイツ</h1>
+              <p>
+                金庫をワイヤレスで快適に操作。<br>
+                スマホで気軽に施錠・解錠できる<br>
+                スマートフォンロック電動可動式耐火金庫。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6"><h1>column</h1></div>
+          <div class="col-6"><h2>column</h2></div>
+        </div>
+      </div>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.js"></script>
+
+    <!-- components -->
+
+    <script src="./src/js/App.js"></script>
+
+</body>
+
+</html>

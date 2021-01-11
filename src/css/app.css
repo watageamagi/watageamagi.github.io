@@ -48,3 +48,24 @@ body {
 .hoge {
   display: flex;
   flex-wrap: wrap; }
+
+.show-room {
+  box-sizing: border-box; }
+
+.item-box {
+  margin-bottom: 30px;
+  transition: 0.4s linear; }
+
+.text-box h1 {
+  font-size: 30px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+  margin-bottom: 0; }
+
+.text-box p {
+  color: #6F7579; }
+
+.text-box {
+  text-align: center;
+  background-color: #CDD6DD; }
