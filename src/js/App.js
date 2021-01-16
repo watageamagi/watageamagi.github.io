@@ -6,9 +6,6 @@ const JANKEN_LIST = [
     JANKEN_TYOKI,
     JANKEN_PA
 ]
-// const JANKEN_LIST = {
-//     JANKEN_GU:0,JANKEN_TYOKI:1,JANKEN_PA:2
-// }
 
 const vue = new Vue({
     el: '#app',
