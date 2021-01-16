@@ -32,24 +32,46 @@
 
         <!--     ジャンケンの画面       -->
         <div class="gameView" v-else>
-            <vs-button
-                size="xl"
-                @click="tehudachange(JANKEN_GU)"
-            >グー</vs-button>
 
-            <vs-button
-                size="xl"
-                @click="tehudachange(JANKEN_TYOKI)"
-            >チョキ</vs-button>
+            <div class="cpu">
+                <div v-if="cputehuda == null">
+                    <div class="cpu-img">
+                        <img class="w-100" src="src/images/cpu.png">
+                    </div>
+                </div>
+                <div v-if="cputehuda != null">
+                    <div class="cpu-img">
+                        <img class="w-100" :src="'src/images/'+getCpuName+'.png'">
+                    </div>
+                </div>
+            </div>
 
-            <vs-button
-                size="xl"
-                @click="tehudachange(JANKEN_PA)"
-            >パー</vs-button>
 
-            {{ getTehudaName }}
-            {{ getCpuName }}
-            {{ kekka }}
+            <div class="player">
+                <div class="d-flex">
+                    <div class="col-4"><img class="w-100" src="src/images/gu.png"
+                        @click="tehudachange(JANKEN_GU)">
+                    </div>
+        
+                    <div class="col-4"><img class="w-100" src="src/images/tyoki.png"
+                        @click="tehudachange(JANKEN_TYOKI)">
+                    </div>
+        
+                    <div class="col-4"><img class="w-100" src="src/images/pa.png"
+                        @click="tehudachange(JANKEN_PA)">
+                    </div>
+                </div>
+                <!-- {{ getTehudaName }}
+                {{ getCpuName }}
+                 -->
+                 <h1>
+                {{ kekka }}
+                </h1>
+                勝ち{{ victoryCount }}<br>
+                負け{{ loseCount }}<br>
+                引き分け{{ drow }}<br>
+    
+            </div>
 
         </div>
 
@@ -57,9 +79,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vuesax@4.0.1-alpha.16/dist/vuesax.min.js"></script>
-
     <!-- components -->
-
+    <script src="./src/component/AppButton.js"></script>
     <script src="./src/js/App.js"></script>
 
 </body>

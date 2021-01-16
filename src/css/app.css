@@ -50,7 +50,7 @@ body {
   flex-wrap: wrap; }
 
 .show-room {
-  box-sizing: border-box; }
+  flex-wrap: wrap; }
 
 .item-box {
   margin-bottom: 30px;
@@ -69,3 +69,124 @@ body {
 .text-box {
   text-align: center;
   background-color: #CDD6DD; }
+
+.title-sake {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 15px; }
+
+.sakelist {
+  display: flex;
+  margin: 15px; }
+  .sakelist_img {
+    width: 70px;
+    height: 70px; }
+
+.text-area {
+  background-color: #dee2e2;
+  height: 70px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .text-area .text-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding-top: 5px; }
+  .text-area h1 {
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .text-area p {
+    margin-bottom: 0px;
+    font-size: 5px;
+    color: darkgray; }
+
+.sitida-box {
+  text-align: center; }
+  .sitida-box .sitida-a h1 {
+    font-size: 20px; }
+  .sitida-box .sitida-a p {
+    font-size: 15px; }
+  .sitida-box .sitida-details {
+    padding-right: 30px;
+    padding-left: 30px; }
+    .sitida-box .sitida-details h1 {
+      font-size: 20px; }
+    .sitida-box .sitida-details p {
+      font-size: 15px;
+      text-align: left; }
+
+.button1 {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  width: 100%;
+  border-color: black; }
+
+.modal-content {
+  width: 90%;
+  margin: auto; }
+
+.modal-body {
+  height: 300px; }
+
+.lol {
+  text-align: center; }
+  .lol h5 {
+    font-size: 5px; }
+  .lol p {
+    font-size: 20px; }
+
+.taikenn {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.gaiyou {
+  background-color: darkgray; }
+  .gaiyou .gaiyou-title {
+    color: darkcyan;
+    background-color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+table {
+  margin: 70px auto;
+  border-collapse: separate;
+  border-spacing: 20px 0px;
+  color: #707070; }
+
+td, th {
+  color: #212121;
+  border: 0;
+  border-top: 1px solid #ACACAC;
+  padding: 1.5rem 0;
+  min-width: 200px; }
+  td tr:last-child td, td tr:last-child th, th tr:last-child td, th tr:last-child th {
+    border-bottom: 1px solid #ACACAC; }
+
+.gaiyou-text {
+  margin: 50px 15px;
+  padding: 30px 100px;
+  text-align: left;
+  background-color: white; }
+
+.cpu {
+  background-color: red;
+  min-height: 40vh; }
+  .cpu-img img {
+    height: 230px;
+    object-fit: contain; }
+
+.player {
+  padding-top: 40px;
+  background-color: royalblue;
+  min-height: 60vh; }
+  .player h1 {
+    text-align: center; }
