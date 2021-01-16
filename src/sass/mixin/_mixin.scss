@@ -27,10 +27,30 @@ $breakpoints: (
     -webkit-line-clamp: $lines;
 }
 
-
 //flex
 @mixin flex-center() {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+// placeholder color
+@mixin placeholder-color($color) {
+    &:placeholder-shown {
+        color: $color;
+    }
+    &::-webkit-input-placeholder {
+        color:$color;
+    }
+    &:-moz-placeholder {
+        color:$color;
+        opacity: 1;
+    }
+    &::-moz-placeholder {
+        color:$color;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        color:$color;
+    }
 }
