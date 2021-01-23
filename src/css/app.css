@@ -10,6 +10,33 @@
 .fade-enter, .fade-leave-to {
   opacity: 0; }
 
+.startView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.gameView .cpu {
+  background-color: red;
+  min-height: 40vh; }
+  .gameView .cpu-img img {
+    height: 230px;
+    object-fit: contain; }
+
+.gameView .player {
+  padding-top: 40px;
+  background-color: royalblue;
+  min-height: 60vh; }
+  .gameView .player h1 {
+    text-align: center; }
+
+.janken-img {
+  width: 100%;
+  max-width: 230px;
+  height: 100%;
+  max-height: 230px;
+  object-fit: contain; }
+
 body {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   margin: 0; }
@@ -29,21 +56,6 @@ body {
 
 #app {
   height: 100vh; }
-
-.startView {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; }
-
-.gameView .text {
-  height: 100vh;
-  color: rgba(var(--vs-primary), 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  text-align: center; }
 
 .hoge {
   display: flex;
@@ -176,17 +188,3 @@ td, th {
   padding: 30px 100px;
   text-align: left;
   background-color: white; }
-
-.cpu {
-  background-color: red;
-  min-height: 40vh; }
-  .cpu-img img {
-    height: 230px;
-    object-fit: contain; }
-
-.player {
-  padding-top: 40px;
-  background-color: royalblue;
-  min-height: 60vh; }
-  .player h1 {
-    text-align: center; }

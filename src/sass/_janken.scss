@@ -1,0 +1,36 @@
+.startView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gameView {
+
+    .cpu{
+        background-color:red;
+        min-height: 40vh;
+        &-img{
+            img{height: 230px;object-fit: contain;}
+        }
+    }
+
+    .player{
+        padding-top:40px;
+        background-color:royalblue;
+        min-height: 60vh;
+        h1{
+            text-align: center;
+        }
+    }
+
+}
+
+
+.janken-img {
+    width: 100%;
+    max-width: 230px;
+    height: 100%;
+    max-height: 230px;
+    object-fit: contain;
+}
